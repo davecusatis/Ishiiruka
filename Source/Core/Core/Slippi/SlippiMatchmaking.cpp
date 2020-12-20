@@ -6,13 +6,10 @@
 #include <string>
 #include <vector>
 
-#if defined __linux__ && HAVE_ALSA
-#elif defined __APPLE__
+#ifndef _WIN32
 #include <netdb.h>
 #include <arpa/inet.h>
-#elif defined _WIN32
 #endif
-
 
 class MmMessageType
 {
