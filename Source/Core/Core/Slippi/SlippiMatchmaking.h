@@ -12,7 +12,6 @@
 #include <json.hpp>
 using json = nlohmann::json;
 
-
 class SlippiMatchmaking
 {
   public:
